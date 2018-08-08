@@ -42,11 +42,26 @@ h1 {
 
 .flex {
 	display: flex;
-	flex-wrap: wrap;
 }
 
 .flex-wrap {
 	flex-wrap: wrap;
+}
+
+.flex-1 {
+	flex: 1 1 160px;
+}
+
+.flex-1-175 {
+	flex: 1 1 175px;
+}
+
+.flex-2 {
+	flex: 2 1 300px;
+}
+
+.align-itens-end {
+	align-items: flex-end;
 }
 
 .just-space-between {
@@ -57,12 +72,38 @@ h1 {
 	justify-content: space-around;
 }
 
+.m-10 {
+	margin: 10px;
+}
+
+.pd-0-10 {
+	padding: 0 10px;
+}
+
+.pd-10 {
+	padding: 10px;
+}
+
+.pl-10 {
+	padding-left: 10px;
+}
+
+.pr-10 {
+	padding-right: 10px;
+}
+
+.pb-60 {
+	padding-bottom: 60px;
+}
+
+.pd-60-0 {
+	padding: 60px 0;
+}
 
 /* Super-info Menu */
 .super-info {
 	background: #122ab2;
 	width: 100%;
-    padding: 10px;
 	color: #fff;
 }
 
@@ -75,7 +116,6 @@ h1 {
 .menu {
 	background: #2c70ff;
 	color: #fff;
-	padding: 10px;
 }
 
 .menu .flex {
@@ -91,19 +131,32 @@ h1 {
 	padding: 15px 0px 15px 20px;
 	font-size: 1.25em;
 	display: block;
+	font-weight: bold;
+}
+
+.menu li a:hover {
+	color: #122ab2;
 }
 
 /* INTRO */
-.intro {
+
+.intro h1 {
 	font-size: 3em;
     line-height: 1;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 /* Sobre */
+
 .sobre .container {
 	border-top: 2px solid #2c70ff;
     border-bottom: 2px solid #2c70ff;
-    padding: 60px 0;
+}
+
+.sobre h1 {
+	margin-bottom: .5em;
+	font-size: 3em;
 }
 
 .sobre-info p {
@@ -113,15 +166,9 @@ h1 {
     color: #7c7c7c;
 }
 
-
 /* Produtos */
 
-.produtos .flex {
-	align-items: flex-end;
-}
-
 .produtos-item {
-	flex: 1;
     background: #f7f7f7;
 }
 
@@ -132,21 +179,21 @@ h1 {
 }
 
 .purple {
-	border-top: 8px solid purple;
+	border-top: 8px solid #ae81ff;
 }
 
 .red {
-	border-top: 8px solid red;
+	border-top: 8px solid #f9265e;
 }
 
 .blue {
-	border-top: 8px solid blue;
+	border-top: 8px solid #66d9eb;
 }
 
 
+/* Preço */
 .price {
     background: #f7f7f7;
-    padding: 60px 0;
 }
 
 .price .flex {
@@ -219,7 +266,6 @@ h1 {
 /* Newsletter */
 .newsletter {
     background: #f7f7f7;
-    padding: 60px 0;
 }
 
 .footer {
@@ -233,12 +279,22 @@ h1 {
 
 @media (max-width: 739px) {
 
-	.container {
-		max-width: 350px;
+	.m-auto {
+		margin: 0 auto;
+	}
+
+	.flex-column {
+		flex-direction: column;
 	}
 
 	.menu .container {
 		flex-direction: column;
+		margin: 0 auto;
+	}
+
+	.menu-itens li a {
+		font-size: 1.15em;
+		padding: 10px;
 	}
 
 	.menu-logo {
